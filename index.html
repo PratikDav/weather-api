@@ -40,7 +40,7 @@
         document.getElementById('searchBtn').addEventListener('click',() => {
             const location =  document.getElementById('location').value
             
-                fetch('http://api.openweathermap.org/data/2.5/weather?q='+location+'&appid=eb844e045a4155e1fa103fc8d4d268b5')
+                fetch('https://api.openweathermap.org/data/2.5/weather?q='+location+'&appid=eb844e045a4155e1fa103fc8d4d268b5')
                 .then(response => response.json())
                 .then(json => {
 
